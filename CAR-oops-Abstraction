@@ -1,0 +1,23 @@
+
+class Car:
+    def __init__(self,color,brand,model,engine_type,price):
+        self.color=color
+        self.brand=brand
+        self._model=model
+        self.engine_type=engine_type
+        self.__price=price
+       
+
+    def details(self):
+        print("name ofthe color:",self.color)
+        print("name of the brand:",self.brand)
+        print("year of the mode:",self._model)
+        print("engine type:",self.engine_type)
+        print("price of the car:",self.__price)
+    def __sample(self):
+        print("i am a private method")
+    def get_price(self):
+        print("Price is :",self.__price)
+    def set_price(self,new_price):
+        self.__price=new_price
+        print("Updated price is:",self.__price)
